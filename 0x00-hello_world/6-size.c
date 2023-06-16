@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* main function -prints the size of various types on the computer
-* Description:use printf to print formatted text
+* main - Prints the size of various types based on
+*        the computer it is compiled and run on..
 *
 * Return: Always 0 (Success)
 */
