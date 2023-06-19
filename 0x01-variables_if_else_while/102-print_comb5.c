@@ -2,9 +2,10 @@
 
 /*
 * main - prints all possible combinations
-*	of two two-digit numbers
-
-* Description: The numbers should range from 0 to 99
+* Description: The two numbers should be separated by a space
+*
+*
+* The numbers should range from 0 to 99
 * Return: 0 (Success)
 */
 
@@ -18,7 +19,7 @@ int main(void)
 		{
 			for (k = 0; k <= 9; k++)
 			{
-				for (m = 1; m <= 9; m++)
+				for (m = 0; m <= 9; m++)
 				{
 					putchar(i + '0');
 					putchar(j + '0');
