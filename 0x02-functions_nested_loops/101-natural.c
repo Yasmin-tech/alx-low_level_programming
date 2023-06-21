@@ -9,11 +9,11 @@
  */
 void sum_multiples_3_and_5(void)
 {
-	int i, sum =0;
+	int i, sum = 0;
 
 	for (i = 2; i < 1024; i++)
 	{
-		if ( i % 3 == 0 || i % 5 == 0)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
 			sum += i;
 		}
@@ -25,4 +25,14 @@ void sum_multiples_3_and_5(void)
 	_putchar(((sum / 10) % 10) + '0');
 	_putchar((sum % 10) + '0');
 	_putchar('\n');
+}
+/**
+ * main - entry point
+ *
+ * Return: 0 alwayes
+ */
+int main(void)
+{
+	sum_multiples_3_and_5();
+	return (0);
 }
