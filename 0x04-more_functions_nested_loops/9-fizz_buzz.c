@@ -1,18 +1,5 @@
 #include "main.h"
-#include <unistd.h>
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+#include <stdio.h>
 
 /**
  * fizz_buzz - print fizz , buzz, or both, or a number
@@ -28,39 +15,23 @@ void fizz_buzz(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			_putchar('F');
-			_putchar('i');
-			_putchar('z');
-			_putchar('z');
-			_putchar('B');
-			_putchar('u');
-			_putchar('z');
-			_putchar('z');
+			printf("FizzBuzz");
 		}
 		else if (i % 3 == 0)
 		{
-			_putchar('F');
-			_putchar('i');
-			_putchar('z');
-			_putchar('z');
+			printf("Fizz");
 		}
 		else if (i % 5 == 0)
 		{
-			_putchar('B');
-			_putchar('u');
-			_putchar('z');
-			_putchar('z');
+			printf("Buzz");
 		}
 		else
 		{
-			if (i > 9)
-				_putchar(i / 10 + '0');
-
-			_putchar(i % 10 + '0');
+			printf("%d", i);
 		}
-		_putchar(' ');
+		printf(" ");
 	}
-	_putchar('\n');
+	printf("\n");
 }
 
 /**
