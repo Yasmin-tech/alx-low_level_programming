@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_line - print '_' 
- *@n: the numbers of 
+ * print_line - print '_'
+ *@n: the numbers of
  *
  * Return: void
  */
