@@ -2,7 +2,7 @@
 
 /**
  * mul - a function that multiples two digits
- * @a: the first number 
+ * @a: the first number
  * @b: the second number
  * Return: the result of a * b
  */
