@@ -40,5 +40,12 @@ void print_number(int n)
 		num %= divisor;
 		divisor /= 10;
 	}
+	if (divisor == 1000000000)
+	{
+		while (num < divisor)
+		{
+			_putchar('0');
+			divisor /= 10;
+		}
+	}
 }
-
