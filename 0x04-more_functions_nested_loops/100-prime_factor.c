@@ -11,7 +11,7 @@ void prime_factor(void)
 {
 	int i;
 	long int maxPrime = 1;
-	int num = 1231952;
+	int num = 612852475143;
 
 	while (num % 2 == 0)
 	{
