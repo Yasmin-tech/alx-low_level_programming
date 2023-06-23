@@ -21,15 +21,14 @@ void print_triangle(int size)
 		for (i = 1; i <= size; i++)
 		{
 			space--;
-			for ( j = 1; j <= space; j++)
+			for (j = 1; j <= space; j++)
 			{
 				_putchar(' ');
 			}
 			for (k = j; k <= size; k++)
 			{
 				_putchar('#');
-			}	
-			
+			}
 			_putchar('\n');
 		}
 	}
