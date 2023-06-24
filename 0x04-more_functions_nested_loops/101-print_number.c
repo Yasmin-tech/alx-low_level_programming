@@ -9,9 +9,9 @@
 
 void print_number(int n)
 {
-	int num = n;
-	int divisor = 1;
-	int digit; /* indiviuale numbers to be printes */
+	unsigned int num = n;
+	unsigned int divisor = 1;
+	unsigned int digit; /* indiviuale numbers to be printes */
 
 	/* print minus sign if it's a negative number */
 
