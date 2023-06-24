@@ -12,3 +12,4 @@ void print_to_98(int n);
 void jack_bauer(void);
 void sum_multiples_3_and_5(void);
 void print_times_table(int n);
+void print_fib_50(void);
