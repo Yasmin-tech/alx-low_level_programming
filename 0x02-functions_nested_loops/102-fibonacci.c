@@ -9,12 +9,13 @@
 
 void print_fib_50(void)
 {
-	unsigned int i, result, a = 0, b = 1;
+	unsigned long int i, a = 0, b = 1;
+	unsigned long int result;
 
 	for (i = 0; i < 50; i++)
 	{
 		result = a + b;
-		printf("%u", result);
+		printf("%lu", result);
 
 		if (i != 49)
 		{
