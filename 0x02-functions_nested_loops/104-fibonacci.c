@@ -35,8 +35,8 @@ void print_fib_98(void)
 		printf(", %lu", result1);
 		printf("%09lu", result2);
 
-		a1 = b1 + (b2 / l);
-		a2 = b2 % l;
+		a1 = b1;
+		a2 = b2;
 		b1 = result1 + (result2 / l);
 		b2 = result2 % l;
 	}
