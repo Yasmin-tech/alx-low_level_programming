@@ -27,7 +27,7 @@ void print_fib_98(void)
 	b1 = b / l;
 	b2 = b % l;
 
-	for (i = 92; i < 99; i++)
+	for (i = 93; i <= 99; i++)
 	{
 		result1 = a1 + b1;
 		result2 = a2 + b2;
