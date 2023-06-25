@@ -21,7 +21,7 @@ void print_fib_98(void)
 		b = result;
 	}
 
-	a1 = a / l; 
+	a1 = a / l;
 	a2 = a % l;
 	b1 = b / l;
 	b2 = b % l;
@@ -32,7 +32,7 @@ void print_fib_98(void)
 		result2 = a2 + b2;
 
 		printf("%lu", result1);
-		printf("%lu", result2);
+		printf("%09lu", result2);
 
 		if (i != 98)
 			printf(", ");
