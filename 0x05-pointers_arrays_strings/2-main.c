@@ -2,17 +2,17 @@
 #include <stdio.h>
 
 /**
-   * main - check the code
-    *
-     * Return: Always 0.
-      */
+* main - check the code
+*
+* Return: Always 0.
+*/
 int main(void)
 {
-	    char *str;
-	        int len;
+	char *str1;
+	int len;
 
-		    str = "My first strlen!";
-		        len = _strlen(str);
-			    printf("%d\n", len);
-			        return (0);
+	str1 = "Holberton!";
+	len = _strlen(str1);
+	printf("%d\n", len);
+	return (0);
 }
