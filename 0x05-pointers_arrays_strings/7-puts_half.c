@@ -30,7 +30,7 @@ void puts_half(char *str)
 		i++;
 	}
 
-	i = i - 1;
+	/*i = i - 1;*/
 	while (i <= las_index)
 	{
 		_putchar(*str);
