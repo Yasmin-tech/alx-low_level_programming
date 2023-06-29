@@ -3,14 +3,14 @@
 int _strlen(char *s);
 
 /**
- * _strcat - a function to concatinate two string 
+ * _strcat - a function to concatinate two string
  *@dest: the string concatenated to be return
  *@src: the first string to be appended to the end of dest
- * 
+ *
  * Return: char *
  */
 
-char * _strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i, len_dest = _strlen(dest);
 
@@ -23,14 +23,14 @@ char * _strcat(char *dest, char *src)
 
 	dest[i] = '\0';
 
-	
+
 	return (dest);
 }
 
 /**
- * _strlen - a function to concatinate two string 
+ * _strlen - a function to concatinate two string
  *@s: the string pointer
- * 
+ *
  * Return: int string length
  */
 
