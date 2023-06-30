@@ -14,9 +14,9 @@ char *leet(char *str)
 	char n[] = {4, 3, 0, 7, 1};
 	int i = 0;
 
-	while (*s)
+	while (*s != '\0')
 	{
-		for (; i < 5 ; i++)
+		for (i = 0; i < 5 ; i++)
 		{
 			if (*s == a[i] || *s == a[i] - 32)
 			{
