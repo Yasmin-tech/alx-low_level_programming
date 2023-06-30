@@ -2,9 +2,9 @@
 
 /**
  * cap_string - captilize all words
- *@s: string pointer
+ *@str: string pointer
  *
- * Return : char *
+ * Return: char *
  */
 
 char *cap_string(char *str)
@@ -15,10 +15,10 @@ char *cap_string(char *str)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] ==  ','|| s[i] == ';' || s[i] == '.'||
-				 s[i] == '!'|| s[i] == '?'||
-				 s[i] == '"'||s[i] == '(' || 
-				 s[i] == ')'|| s[i] == '{'||
+		if (s[i] ==  ',' || s[i] == ';' || s[i] == '.' ||
+				 s[i] == '!' || s[i] == '?' ||
+				 s[i] == '"' || s[i] == '(' ||
+				 s[i] == ')' || s[i] == '{' ||
 				 s[i] == '}' || s[i] == ' ' ||
 				 s[i] == '\t' || s[i] == '\n')
 		{
