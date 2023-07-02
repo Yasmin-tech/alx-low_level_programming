@@ -34,6 +34,8 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	}
 
+	/* according to strcat() and strncat functions dest should always be null terminated*/
+	/* this shoud be dest[i] = '\0';*/
 	if (last_index == len_src)
 		dest[i] = '\0';
 
