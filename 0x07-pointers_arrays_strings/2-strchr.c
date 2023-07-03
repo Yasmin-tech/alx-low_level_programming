@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * _strchr - find the first occurrence of the character
@@ -18,5 +19,7 @@ char *_strchr(char *s, char c)
 		s++;
 	}
 
+	if (!(*s))
+		return (NULL);
 	return (s);
 }
