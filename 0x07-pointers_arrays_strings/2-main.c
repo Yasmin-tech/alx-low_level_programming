@@ -11,12 +11,11 @@ int main(void)
     char *s = "hello";
     char *f;
 
-    f = _strchr(s, 'p');
+    f = _strchr(s, 'a');
 
     if (f != NULL)
     {
         printf("%s\n", f);
     }
-    printf("nothing is printed");
     return (0);
 }
