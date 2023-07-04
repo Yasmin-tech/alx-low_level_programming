@@ -37,8 +37,6 @@ char *_strstr(char *haystack, char *needle)
 		p1 -= matches;
 		return (p1);
 	}
-	else
-	{
-		return (NULL);
-	}
+
+	return (NULL);
 }
