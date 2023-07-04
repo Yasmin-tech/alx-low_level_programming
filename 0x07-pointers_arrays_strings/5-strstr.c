@@ -12,31 +12,24 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *p1, *p2 = needle;
-	int matches = 0;
 
 	for (p1 = haystack; *p1; p1++)
 	{
 
-		if (*p1 == *p2)
+		char *pp1 = p1;
+
+		while (*pp1 == *p2 && *p2)
 		{
 
+			pp1++;
 			p2++;
-			if (*p2 == '\0')
-				break;
-			matches++;
 		}
-		else
-		{
-			p2 = needle;
-			matches = 0;
-		}
+		if (!*p2)
+			return (p1);
+
+		p2 = needle;
 	}
 
-	if (matches && !*p2)
-	{
-		p1 -= matches;
-		return (p1);
-	}
 
 	return (NULL);
 }
