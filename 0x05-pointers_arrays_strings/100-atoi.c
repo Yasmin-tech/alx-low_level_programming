@@ -25,7 +25,7 @@ int _atoi(char *s)
 		result = result * 10 + num;
 		s++;
 	}
-	
+
 	return (sign * result);
 
 }
