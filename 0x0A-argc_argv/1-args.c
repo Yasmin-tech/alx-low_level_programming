@@ -9,9 +9,9 @@
  * Return: (0) Successfuly.
  */
 
-int main(__attribute__((__unused__)) int argc, __attribute__((__unused__)) char *argv[])
+int main(int argc, __attribute__((__unused__)) char *argv[])
 {
-	printf("%d\n", argc);
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
