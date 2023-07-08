@@ -14,7 +14,7 @@ int change(int cents, int coins);
 
 int main(int argc, char *argv[])
 {
-	int cents, coins = 0;
+	long long int cents, coins = 0;
 
 	if (argc != 2)
 	{
