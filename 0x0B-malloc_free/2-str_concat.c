@@ -3,7 +3,7 @@
 
 /**
  * str_concat - a function that concatenates two strings
- *Description: the function takes two charcter pointer and 
+ *Description: the function takes two charcter pointer and
  *	alocate a new memory space that contains the two
  *	string concatenated
  *@s1: a character pointer to the first string
