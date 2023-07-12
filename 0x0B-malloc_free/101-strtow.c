@@ -40,7 +40,7 @@ char **strtow(char *str)
 		}
 
 	}
-	
+
 	if (!w_counter)
 		return (NULL);
 
