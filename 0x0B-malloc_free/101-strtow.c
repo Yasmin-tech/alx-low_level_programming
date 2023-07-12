@@ -40,6 +40,9 @@ char **strtow(char *str)
 		}
 
 	}
+	
+	if (!w_counter)
+		return (NULL);
 
 	/*printf("there are %d words in the string\n", w_counter);*/
 
