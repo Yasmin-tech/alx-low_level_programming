@@ -46,8 +46,6 @@ int change(long int cents, int coins)
 	int i;
 	int a[] = {1, 2, 5, 10, 25};
 
-	if (cents == 0)
-		return (coins);
 	while (cents != 0)
 	{
 		for (i = 0; i < 5; i++)
@@ -56,24 +54,20 @@ int change(long int cents, int coins)
 			{
 				coins++;
 				cents = cents - a[i];
-				printf("cents = %ld\n", cents);
-				break;
 			}
 			else if (a[i] > cents)
 			{
 				coins++;
 				cents = cents - a[i - 1];
-				printf("cents = %ld\n", cents);
-				break;
 			}
-
-		}	
-		if (i == 5)
+		}
+		if (cents > a[4])
 		{
 			coins++;
 			cents = cents - a[4];
-			printf("cents = %ld\n", cents);
 		}
+
+
 	}
 	return (coins);
 }
