@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _strlen(char *s);
+/*int _strlen(char *s);*/
 
 /**
  * _strcat - a function to concatinate two string
@@ -27,22 +27,4 @@ char *_strcat(char *dest, char *src)
 	return (dest);
 }
 
-/**
- * _strlen - a function to concatinate two string
- *@s: the string pointer
- *
- * Return: int string length
- */
 
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*s != '\0')
-	{
-		len++;
-		s++;
-	}
-
-	return (len);
-}
