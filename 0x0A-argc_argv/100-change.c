@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int change(long int cents, int coins);
+int change(int cents, int coins);
 
 /**
  * main -  a program that prints the minimum number of
@@ -14,7 +14,7 @@ int change(long int cents, int coins);
 
 int main(int argc, char *argv[])
 {
-	long int cents, coins = 0;
+	int cents, coins = 0;
 
 	if (argc != 2)
 	{
@@ -22,8 +22,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	cents = atoll(argv[1]);
-	printf("numbr is: %ld\n",cents);
+	cents = atoi(argv[1]);
+	/*printf("numbr is: %ld\n",cents);*/
 
 	if (cents < 0)
 		printf("0\n");
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
  * Return: the minimum number of coins
  */
 
-int change(long int cents, int coins)
+int change(int cents, int coins)
 {
 	int i;
 	int a[] = {1, 2, 5, 10, 25};
@@ -56,23 +56,23 @@ int change(long int cents, int coins)
 			{
 				coins++;
 				cents = cents - a[i];
-				printf("cents = %ld\n", cents);
+				/*printf("cents = %ld\n", cents);*/
 				break;
 			}
 			else if (a[i] > cents)
 			{
 				coins++;
 				cents = cents - a[i - 1];
-				printf("cents = %ld\n", cents);
+				/*printf("cents = %ld\n", cents);*/
 				break;
 			}
 
-		}	
+		}
 		if (i == 5)
 		{
 			coins++;
 			cents = cents - a[4];
-			printf("cents = %ld\n", cents);
+			/*printf("cents = %ld\n", cents);*/
 		}
 	}
 	return (coins);
