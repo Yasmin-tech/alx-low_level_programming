@@ -12,9 +12,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
 	unsigned char *pp;
-	unsigned int len = size;
+	unsigned int len = nmemb * size;
 
-	if (!nmemb || !size)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 
 	p = malloc(nmemb * size);
