@@ -2,11 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-void print_s(va_list arg);
-void print_i(va_list arg);
-void print_c(va_list arg);
-void print_f(va_list arg);
+#include "variadic_functions.h"
 
 /**
  * print_all - prints arguments c: character, e: float, i: int, s: string
