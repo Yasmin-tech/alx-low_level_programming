@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 
 	va_start(arg, format);
 	i = 0;
-	while ((format != NULL) && (retrv = format[i++]))
+	while ((format != NULL) && (retrv = format[i]))
 	{
 		flag = 0;
 		switch (retrv)
@@ -42,8 +42,9 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		if (flag && format[i])
+		if (flag && format[i + 1])
 			printf(", ");
+		i++;
 	}
 	printf("\n");
 	va_end(arg);
@@ -65,6 +66,7 @@ void print_s(va_list arg)
 	while (s != NULL)
 	{
 		printf("%s", s);
+		break;
 	}
 	if (s == NULL)
 	{
