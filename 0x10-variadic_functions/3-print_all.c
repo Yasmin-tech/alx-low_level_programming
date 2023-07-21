@@ -61,10 +61,15 @@ void print_s(va_list arg)
 	char *s;
 
 	s = va_arg(arg, char *);
+
+	while (s != NULL)
+	{
+		printf("%s", s);
+		break;
+	}
 	if (s == NULL)
 		printf("(nil)");
-	else
-		printf("%s", s);
+
 }
 
 /**
