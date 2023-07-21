@@ -1,7 +1,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "variadic_functions.h"
 
 /**
@@ -13,7 +12,7 @@
 
 void print_all(const char * const format, ...)
 {
-	int i, flag, len = strlen(format);
+	int i, flag; /* len = strlen(format);*/
 	char retrv;
 	va_list arg;
 
@@ -43,7 +42,7 @@ void print_all(const char * const format, ...)
 			default:
 				break;
 		}
-		if (flag && (i < len))
+		if (flag && format[i])
 			printf(", ");
 	}
 	printf("\n");
