@@ -64,13 +64,14 @@ void print_s(va_list arg)
 
 	s = va_arg(arg, char *);
 
-	while (s != NULL)
+	if (s != NULL)
 	{
 		printf("%s", s);
-		break;
 	}
 	if (s == NULL)
+	{
 		printf("(nil)");
+	}
 
 }
 
