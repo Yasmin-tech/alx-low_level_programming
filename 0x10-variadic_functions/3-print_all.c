@@ -18,6 +18,8 @@ void print_all(const char * const format, ...)
 
 	va_start(arg, format);
 	i = 0;
+	if (format == NULL)
+		return;
 	while ((retrv = format[i++]))
 	{
 		flag = 0;
@@ -67,8 +69,7 @@ void print_s(va_list arg)
 		printf("%s", s);
 		break;
 	}
-	if (s == NULL)
-		printf("(nil)");
+	printf("(nil)");
 
 }
 
