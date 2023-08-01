@@ -24,7 +24,7 @@ int main(void)
     add_nodeint_end(&head, 1024);
     len = print_listint(head);
     printf("len = %d -----------------\n", len);
-    insert_nodeint_at_index(&head, 9, 4096);
+    insert_nodeint_at_index(&head, 10, 4096);
     len = print_listint(head);
     printf("len = %d -----------------\n", len);
     free_listint2(&head);
