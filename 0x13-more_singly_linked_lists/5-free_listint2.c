@@ -15,7 +15,7 @@ void free_listint2(listint_t **head)
 
 	ptr = *head;
 
-	if (ptr == NULL)
+	if (head == NULL || ptr == NULL)
 		return;
 
 	while (ptr != NULL)
