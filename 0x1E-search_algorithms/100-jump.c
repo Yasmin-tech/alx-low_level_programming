@@ -20,7 +20,7 @@ int jump_search(int *array, size_t size, int value)
 		return (-1);
 	low = 0;
 	high = 0;
-	jump_steps = sqrt(size);
+	jump_steps = (int)sqrt((double)size);
 
 	while ((low + jump_steps) < size)
 	{
