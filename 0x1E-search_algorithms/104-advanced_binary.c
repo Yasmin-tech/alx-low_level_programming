@@ -68,15 +68,18 @@ int recursive_advanced_binary(int *array,
 
 		if (array[mid_idx] == value)
 		{
-			if (mid_idx == 0)
+			if (mid_idx == 0 || array[mid_idx - 1] != value)
 				return (mid_idx);
-
-			if (array[mid_idx - 1] == value)
+			else
 				return (recursive_advanced_binary(array, value, left_idx, mid_idx));
-			return (mid_idx);
 		}
 		else if (array[mid_idx] > value)
-			return (recursive_advanced_binary(array, value, left_idx, mid_idx - 1));
+		{
+			if (mid_idx > 0)
+				return (recursive_advanced_binary(array, value, left_idx, mid_idx - 1));
+			else
+				return (-1);
+		}
 		else
 			return (recursive_advanced_binary(array, value, mid_idx + 1, right_idx));
 	}
