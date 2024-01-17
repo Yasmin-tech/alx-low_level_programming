@@ -19,7 +19,7 @@ int advanced_binary(int *array, size_t size, int value)
 {
 	size_t left_idx, right_idx;
 
-	if (array == NULL)
+	if (array == NULL || size == 0)
 		return (-1);
 
 	left_idx = 0;
