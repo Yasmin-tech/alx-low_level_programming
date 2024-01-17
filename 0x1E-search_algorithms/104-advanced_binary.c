@@ -66,13 +66,17 @@ int recursive_advanced_binary(int *array,
 
 		mid_idx = (left_idx + right_idx) / 2;
 
-		if (array[mid_idx] >= value)
+		if (array[mid_idx] == value)
 		{
+			if (mid_idx == 0)
+				return (mid_idx);
+
 			if (array[mid_idx - 1] == value)
 				return (recursive_advanced_binary(array, value, left_idx, mid_idx));
-			else
-				return (mid_idx);
+			return (mid_idx);
 		}
+		else if (array[mid_idx] > value)
+			return (recursive_advanced_binary(array, value, left_idx, mid_idx - 1));
 		else
 			return (recursive_advanced_binary(array, value, mid_idx + 1, right_idx));
 	}
