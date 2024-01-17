@@ -22,7 +22,7 @@ int jump_search(int *array, size_t size, int value)
 	high = 0;
 	jump_steps = sqrt(size);
 
-	while ((low + jump_steps) < size)
+	while ((high + jump_steps) < size)
 	{
 		low = high;
 		high = high + jump_steps;
