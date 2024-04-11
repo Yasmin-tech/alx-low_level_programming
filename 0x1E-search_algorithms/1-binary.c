@@ -2,7 +2,7 @@
 
 /**
  * binary_search - a function that searches for a value in a sorted array
- * of integers using the Binary search algorithm
+ * of integers using the Iterative Binary search algorithm
  *
  *@array: a pointer to the array of values
  *@size: the size of the array
@@ -14,39 +14,30 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	size_t mid_idx, left_idx, right_idx, i, j;
+	size_t low_idx = 0, high_idx = size - 1, mid_idx, i;
 
 	if (array == NULL)
 		return (-1);
 
-	left_idx = 0;
-	right_idx = size - 1;
-	while (left_idx <= right_idx)
+	while (low_idx <= high_idx)
 	{
-		j = 0;
-		printf("Searching in array: ");
-		for (i = left_idx; i <= right_idx; i++)
-		{
-			if (j == 0)
-			{
-				printf("%d", array[i]);
-				j = 1;
-			}
-			else
-				printf(", %d", array[i]);
-
-		}
+		/* print the searching array */
+		i = low_idx;
+		printf("Searching in array: %d", array[i]);
+		for (i = i + 1; i <= high_idx; i++)
+			printf(", %d", array[i]);
 		printf("\n");
 
-		mid_idx = (left_idx + right_idx) / 2;
+		mid_idx = low_idx + (high_idx - low_idx) / 2;
 
 		if (array[mid_idx] == value)
 			return (mid_idx);
-		else if (array[mid_idx] > value)
-			right_idx = mid_idx - 1;
-		else if (array[mid_idx] < value)
-			left_idx = mid_idx + 1;
+		else if (value < array[mid_idx])
+			high_idx = mid_idx - 1;
+		else
+			low_idx = mid_idx + 1;
 	}
+
 	return (-1);
 }
 
